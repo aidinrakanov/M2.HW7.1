@@ -55,7 +55,7 @@ public class Main {
         iter = listC.iterator();
         while (iter.hasNext()) {
             String str = iter.next();
-            System.out.println(str);
+            System.out.println("spisok sort" +str);
         }
 
     }
