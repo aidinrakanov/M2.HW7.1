@@ -15,7 +15,14 @@ public class Main {
         listA.add(sc.nextLine());
         listA.add(sc.nextLine());
 
-        System.out.println("spisok A " + listA);
+        Iterator<String> iter1 = listA.iterator();
+        iter1 = listA.iterator();
+        while (iter1.hasNext()){
+            String s1 = iter1.next();
+            System.out.println(s1);
+        }
+        System.out.println("___________________");
+
 
         listA.ensureCapacity(10);
         ArrayList<String> listB = new ArrayList<>(10);
@@ -26,7 +33,13 @@ public class Main {
         listB.add(sc.nextLine());
         listB.add(sc.nextLine());
 
-        System.out.println("spisok B " + listB);
+        Iterator<String> iter2 = listA.iterator();
+        iter2 = listA.iterator();
+        while (iter2.hasNext()){
+            String s2 = iter2.next();
+            System.out.println(s2);
+        }
+        System.out.println("___________________");
 
         ArrayList<String> listC = new ArrayList<>();
         Collections.reverse(listB);
@@ -42,7 +55,8 @@ public class Main {
             String str = iter.next();
 
         }
-        System.out.println("spisok C2" +listC);
+        System.out.println("spisok (a1,b5,a2,b4,a3,b3,a4,b2,5,b1) :" +listC.toString());
+        System.out.println("____________________________");
 
 
         Collections.sort(listC, new Comparator<String>() {
@@ -55,7 +69,7 @@ public class Main {
         iter = listC.iterator();
         while (iter.hasNext()) {
             String str = iter.next();
-            System.out.println("spisok sort" +str);
+            System.out.println(str);
         }
 
     }
