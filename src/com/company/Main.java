@@ -53,9 +53,9 @@ public class Main {
         }
         while (iter.hasNext()) {
             String str = iter.next();
-
+            System.out.println(str);
         }
-        System.out.println("spisok (a1,b5,a2,b4,a3,b3,a4,b2,5,b1) :" +listC.toString());
+
         System.out.println("____________________________");
 
 
