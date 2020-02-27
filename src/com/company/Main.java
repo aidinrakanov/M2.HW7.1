@@ -33,8 +33,8 @@ public class Main {
         listB.add(sc.nextLine());
         listB.add(sc.nextLine());
 
-        Iterator<String> iter2 = listA.iterator();
-        iter2 = listA.iterator();
+        Iterator<String> iter2 = listB.iterator();
+        iter2 = listB.iterator();
         while (iter2.hasNext()){
             String s2 = iter2.next();
             System.out.println(s2);
@@ -55,7 +55,6 @@ public class Main {
             String str = iter.next();
             System.out.println(str);
         }
-
         System.out.println("____________________________");
 
 
@@ -71,14 +70,5 @@ public class Main {
             String str = iter.next();
             System.out.println(str);
         }
-
     }
 }
-
-//        listC.add(1, listB.get(4));
-//        listC.add(3, listB.get(3));
-//        listC.add(5, listB.get(2));
-//        listC.add(7, listB.get(1));
-//        listC.add(9, listB.get(0));
-//        System.out.println("spisok C " +listC);
-//       Collections.sort(listC);
